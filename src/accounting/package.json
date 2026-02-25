@@ -1,0 +1,41 @@
+{
+  "name": "account-management-system",
+  "version": "1.0.0",
+  "description": "Node.js implementation of legacy COBOL Account Management System",
+  "main": "index.js",
+  "bin": {
+    "account-system": "index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": [
+    "account-management",
+    "cobol-modernization",
+    "student-accounts"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "index.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "lines": 90,
+        "functions": 90,
+        "branches": 85
+      }
+    }
+  }
+}
